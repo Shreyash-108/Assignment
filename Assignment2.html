@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes Villa</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        header {
+            background-color: #fc4a1a;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .product-card {
+            flex: 1 0 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto
+            margin-bottom: 10px;
+        }
+
+        .sidebar {
+            flex: 0 0 200px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        /* Media Query for responsiveness */
+        @media screen and (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product-card,
+            .sidebar {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shoes Villa</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="main-container">
+        <div class="product-card">
+            <img src="https://freepngimg.com/thumb/shoes/27428-5-nike-shoes-transparent-background.png" alt="Product 1">
+            <h3>Nike Free Run 2 Blue And Orange</h3>
+            <p>₹ 7900</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://clipart-library.com/images_k/shoe-transparent-background/shoe-transparent-background-12.png" alt="Product 2">
+            <h3>Sneakers Skate Shoe Nike One</h3>
+            <p>₹ 6900</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://clipart-library.com/images_k/shoes-transparent-background/shoes-transparent-background-24.png" alt="Product 3">
+            <h3>Nike Dunk Low Retro</h3>
+            <p>₹ 8649</p>
+        </div>
+
+        <div class="sidebar">
+            <h2>Related Links</h2>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Shoes Villa. All rights reserved.
+    </footer>
+</body>
+</html>
